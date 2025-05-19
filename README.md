@@ -19,31 +19,33 @@ Este projeto é um sistema de pagamentos assíncrono que utiliza:
 - [Flutter SDK](https://docs.flutter.dev/get-started/install)
 - Android Studio ou emulador / dispositivo físico
 
-### Como rodar o app
+# Como rodar o back-end (microsserviços)
 
-# 1. Navegue até a pasta do app Flutter
-```bash
-cd frontend_flutter
-```
+### Na raiz do projeto (onde está o docker-compose.yml)
 
-# 2. Instale as dependências
-```bash
-flutter pub get
-```
-
-# 3. Rode o app em um emulador ou dispositivo
-```bash
-flutter run
-```
-
-# Na raiz do projeto (onde está o docker-compose.yml)
-
-# 1. Build dos serviços
+### 1. Build dos serviços
 ```bash
 docker-compose build
 ```
 
-# 2. Subir os containers
+### 2. Subir os containers
 ```bash
 docker-compose up -d
+```
+
+# Como rodar o app
+
+### 1. Navegue até a pasta do app Flutter
+```bash
+cd frontend_flutter
+```
+
+### 2. Instale as dependências
+```bash
+flutter pub get
+```
+
+### 3. Rode o app em um emulador ou dispositivo
+```bash
+flutter run
 ```
